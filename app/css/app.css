@@ -1,5 +1,11 @@
 /* app css stylesheet */
 
+.fullscreen {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -27,4 +33,22 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+#css-filter-blur { margin: 20px; }
+#css-filter-blur:hover {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.headertext {
+    font-family: "Verdana";
+    font-size: 64px;
+    fill: white;
+}
+
+p, h1, h2, h3 {
+    font-family: "Verdana";
+    fill: "#2F343B";
 }
