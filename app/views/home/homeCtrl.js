@@ -1,9 +1,6 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
-
-
-
-.controller('View1Ctrl', [function() {
-
+angular.module('myApp.views')
+    .controller('homeCtrl', ['$scope', function($scope) {
+        $scope.testdata = d3.range(100)
 }]);
