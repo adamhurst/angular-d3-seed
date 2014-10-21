@@ -1,4 +1,19 @@
 /* app css stylesheet */
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.land {
+
+}
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
 
 .fullscreen {
     position: fixed;
@@ -44,7 +59,7 @@
 
 .headertext {
     font-family: "Verdana";
-    font-size: 64px;
+    font-size: 52px;
     fill: white;
 }
 

@@ -7,4 +7,12 @@ var myApp = angular.module('myApp', [
   'myApp.version',
   'myApp.services',
   'myApp.directives'
-]);
+    ])
+
+myApp.controller('mainControl', ['$scope','dataService', function($scope, dataService){
+    dataService.getGeoData().then(function(data){
+        $scope.data = data.hashtag.data;
+        console.debug("NEW DATA")
+    })
+    window.control = $scope
+}])

@@ -7,15 +7,16 @@ angular.module('myApp.services', [])
     })
     .factory('dataService', function($http) {
 
-        var baseURI = 'http:localhost:8888/RESTapi'
+        var baseURI = 'http://acolourfulworld.3w.nu/backend/hashtag/'
 
         var promise; // Caching the get promise to avoid multiple calls to the server
 
         var dataService = {
             getGeoData: function() {
+                console.debug("geoData Service")
                 if ( !promise ) {
                     // $http returns a promise, which has a then function, which also returns a promise
-                    promise = $http.get( baseURI+'test.json' ).then(function (response) {
+                    promise = $http.get( baseURI+'doctorswithoutborders' ).then(function (response) {
                         // The then function is an opportunity to modify the response
                         // The return value gets picked up by the then in the controller.
                         return response.data;
